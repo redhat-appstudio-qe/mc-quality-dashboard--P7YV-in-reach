@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend-quality-dashboard-szp1
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-ddoa-tenant/mc-quality-dashboard/frontend-quality-dashboard-szp1@sha256:bcf35f61808ef6cebe6d6ef26a286c3e6877f6ddfba213f994da76ae65857df7
+        name: quality-frontend-dashboard
+        resources: {}
+status: {}
